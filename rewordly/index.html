@@ -1,0 +1,94 @@
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Carousel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>      
+  
+</head>
+<body>
+  
+  <section class="header">
+    <div class="logo">
+        <img src="Img/logo.svg" class="logo-btn" alt="logo">
+        <span class="logo-text">FOR READERS</span>
+    </div>
+    <div class="header-buttons">
+        <div class="burger-btn" onclick="showNavigation();">
+            <div class="element-wrap">
+                <div class="burger-element"></div>
+                <div class="burger-element"></div>
+                <div class="burger-element"></div>
+            </div>
+            <img src="Img/close.png" class="close-icon" alt="close">
+        </div>
+        <div class="navigation-section">
+          <div class="wrap-nav">
+            <div class="nav-block">
+                <a class="nav-link">Readocracy x Journalism</a></br>
+                <a class="nav-link">Readocracy x Education</a></br>
+            </div>
+            <div class="nav-block">
+                <a class="nav-link">About us</a></br>
+                <a class="nav-link">Our Mission</a></br>
+                <a class="nav-link">Guiding Principles</a></br>
+                <a class="nav-link">You Control Your Data</a></br>
+                <a class="nav-link">Contact Us</a>
+            </div>
+            <div class="nav-block">
+                <a class="nav-link">Readefined</a></br>
+                <a class="nav-link">Rewordly</a>
+            </div>
+            </div>
+        </div>
+        <div class="log-in">login</div>
+        <div class="sign-up">sign up</div>
+    </div>  
+  </section>
+  <div class="carousel-container">
+
+        <div class="my-slides">
+          <img src="Img/picture1.jpg">
+          <div class="text">
+              <p>The average person spents</br> over 3 hours online, mostly</br> consuming content. </p></br>
+              <p>Readocracy makes</br> it count</p>
+          </div>
+        </div>
+
+        <div class="my-slides">
+          <img src="Img/picture2.jpg">
+          <div class="text">
+              <p>Readocracy is a trust and</br> credibiliy passport</br> for the web.</p></br>
+              <p>It gives you the</br> internet you deserve.</p>
+          </div>
+        </div>
+      
+        <div class="my-slides">
+          <img src="Img/picture3.jpg">
+          <div class="text">
+              <p>We are fixing the internet</br> by making your time online</br> count for something.</p></br>
+              <p>Get Credit for anything</br> you read or watch online</p>
+           </div>
+        </div>
+
+        <div class="my-slides">
+            <img src="Img/picture4.jpg" >
+            <div class="text">
+                <p>You are more</br> than your degree.</p></br>
+                <p>Get credit for anything</br> you read or watch online</br> and show what you want. </p>
+            </div>
+        </div>
+   
+    <img class="next-btn" src="Img/arrow-right.svg" onclick="plusSlides(1)">
+    
+  </div>
+  <div class="down-section">
+    <span class="down-text">Here's how</span>
+    <img class="down-btn" src="Img/arrow-down.svg">
+  </div>
+  
+ </body>
+</html>

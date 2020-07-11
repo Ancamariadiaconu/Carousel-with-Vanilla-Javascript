@@ -1,0 +1,347 @@
+/*reset css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+/*header style*/
+
+.header{
+
+    position: fixed;
+    width:100%;
+    z-index:100;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+
+    display: flex;
+    align-items: center;
+    padding:1rem;
+}
+.logo-text {
+
+    color: 	#C0C0C0;
+    font-weight: 900;
+    opacity: 0.8;
+}
+.logo-btn {
+
+    width: 80px;
+    height:50px;
+}
+.header-buttons {
+
+    display: flex;
+    padding:1rem;
+    position: sticky;
+    top:0;
+    right:0;    
+}
+.burger-btn {
+
+    width:50px;
+    height:35px;
+    border:1px solid white;
+    position: relative;
+}
+.element-wrap {
+
+    position: absolute;
+    top:50%;
+    right:10px;
+    transform:translateY(-50%);
+    display: block;
+}
+
+.burger-element {
+
+    width:15px;
+    height:2px;
+    background-color: white;
+    margin-top:0.2rem;
+}
+
+.burger-element:first-child {
+
+    margin-top:0rem;
+}
+
+.log-in{
+
+    width:100px;
+    height:35px;
+    border:1px solid white;
+    color: white;
+    font-weight:bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding-right:10px;  
+}
+.sign-up {
+
+    width:100px;
+    height:35px;
+    background-color:#3aff98;
+    color: black;
+    font-weight: bold; 
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding-right:10px;
+}
+.burger-btn, .log-in, .sign-up {
+
+    margin-left:1rem;
+    border-radius: 1px;
+   
+}
+.log-in, .sign-up, .burger-btn {
+
+    position: relative;
+    z-index:100;
+}
+/* navigation section style*/
+
+.navigation-section {
+
+    width:240px;
+    background-color: black;
+    color: #3aff98;
+    height:100vh;
+    padding-left:2rem;
+    position: absolute;
+    right:0;
+    top:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+
+}
+
+.show-navigation {
+
+  display: block;
+}
+
+.nav-block {
+
+    margin-top:6rem;
+    width:180px;
+}
+
+.nav-block a {
+
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-block a:hover {
+
+    border-bottom: 1px solid white;
+}
+
+.close-icon {
+
+    width:15px;
+    display: none;
+    position: absolute;
+    top:50%;
+    right:10px;
+    transform:translateY(-50%);
+}
+
+.show-close-icon {
+
+    display: block;
+}
+
+.hide-burger-btn {
+
+    display: none;
+}
+
+/*carousel style*/
+
+.carousel-container {
+
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    
+}
+.my-slides img {
+
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.text {
+
+    font-size: 50px;
+    color: #3aff98;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top:15%;
+    left:10%;
+    line-height: 4rem;
+}
+
+/* next button and bottom button styles */
+
+.next-btn{
+    width: 80px;
+    height:50px;
+    cursor: pointer;
+    position: absolute;
+    top: 83%;
+    right:6%;
+}
+.down-section { 
+
+    position: absolute;
+    top:80%;
+    left:10%;
+    display: flex;
+    align-items: center;
+}
+.down-btn {
+
+    width: 80px;
+    height:50px;
+    cursor: pointer;  
+}
+
+.down-text {
+
+    font-size: 50px;
+    color: #3aff98;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .header{
+       
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .logo{
+        margin-right:20px;
+    }
+    .header-buttons {
+
+        padding:0px;
+        width:221px;
+        margin: 0 auto;
+    }
+
+
+    .log-in,.sign-up {
+
+        width:80px;
+        height: 27px;
+        margin:0px 0px 0px 10px;
+    }
+    .burger-btn {
+
+        height:27px;
+        width:41px;
+        margin:0px;
+    }
+
+    .text, .down-text {
+
+        font-size:1rem;
+        line-height:1.3rem;
+    }
+    .text {
+
+        top:40%;
+    }
+    .next-btn, .down-btn {
+
+        width:50px;
+        height:30px;
+    }
+    .down-section {
+
+        top:85%;
+    }
+
+    .navigation-section {
+
+        padding-top:6rem;
+        width:100vw;
+        position: fixed;
+        padding-left:0px;
+       
+    }
+    .wrap-nav {
+
+        width:221px;
+        margin: 0 auto;
+    }
+
+    .nav-block {
+
+        margin-top:2rem;
+    }
+
+    .nav-block a {
+
+        margin-bottom: 5px;
+    }
+    
+
+  }
+
